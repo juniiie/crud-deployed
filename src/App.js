@@ -58,7 +58,7 @@ function App() {
       // Shows the new changes immediately
       setEmployeeList(
         employeeList.map((val) => {
-          return val.id == id
+          return val.id === id
             ? {
                 id: val.id,
                 name: val.name,
@@ -80,7 +80,7 @@ function App() {
     ).then((response) => [
       setEmployeeList(
         employeeList.filter((val) => {
-          return val.id != id;
+          return val.id !== id;
         })
       ),
     ]);
